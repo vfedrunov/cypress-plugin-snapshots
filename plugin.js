@@ -23,6 +23,7 @@ function initPlugin(on, globalConfig = {
     const args = Array.isArray(launchOptions) ? launchOptions : launchOptions.args;
 
     if (browser.name === 'chrome') {
+      args.push('--window-size=1920,1246')
       args.push('--font-render-hinting=medium');
       args.push('--enable-font-antialiasing');
       args.push('--disable-gpu');
